@@ -1,0 +1,10 @@
+class_name: AcceptanceTester
+modules:
+  enabled:
+    - Asserts
+    - PhpBrowser:
+        url: http://sheer/
+    - REST:
+        url: 'http://sheer/api/v1/'
+        depends: PhpBrowser
+        shortDebugResponse: 300

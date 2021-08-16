@@ -1,0 +1,23 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: s4urp
+ * Date: 11.06.2019
+ * Time: 14:34
+ */
+
+namespace widgets;
+
+use yii\bootstrap\Widget;
+
+class FormGroup extends Widget
+{
+    public $content = '';
+    
+    public function run()
+    {
+        echo $this->render('//widgets/form/formGroup', [
+            'content' => $this->content,
+        ]);
+    }
+}

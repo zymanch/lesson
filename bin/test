@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+if (\DIRECTORY_SEPARATOR !== '\\') {
+    die("!!! DO NOT RUN TESTS ON PRODUCTION !!!\n");
+}
+include(dirname(__FILE__) . '/../phpunit.php');
+
+
